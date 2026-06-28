@@ -22,7 +22,7 @@ else:
 
 from config.llm_reasoning_effort import ReasoningEffortChoice
 from config.strict_config import StrictConfigModel
-from context.state import MutableAgentState
+from core.context.state import MutableAgentState
 from core.agent_harness.session.background import (
     BackgroundInvestigationRecord,
     BackgroundNotificationPreferences,

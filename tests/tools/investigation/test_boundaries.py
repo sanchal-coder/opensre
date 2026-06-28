@@ -9,7 +9,6 @@ def test_core_orchestration_import_path_removed() -> None:
     forbidden_import = "core." + "orchestration"
     tracked_roots = (
         Path("cli"),
-        Path("context"),
         Path("core"),
         Path("infra"),
         Path("integrations"),

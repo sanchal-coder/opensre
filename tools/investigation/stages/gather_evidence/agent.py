@@ -6,8 +6,8 @@ import logging
 from typing import Any, cast
 
 from config.constants.investigation import MAX_INVESTIGATION_LOOPS
-from context.state import InvestigationState
-from context.state.evidence import EvidenceEntry
+from core.context.state import InvestigationState
+from core.context.state.evidence import EvidenceEntry
 from core import (
     LoopEventCallback,
     RuntimeEventCallback,

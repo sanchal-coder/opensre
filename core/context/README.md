@@ -1,6 +1,6 @@
 # Investigation Context
 
-`context/` owns the provider-agnostic investigation context that OpenSRE passes
+`core/context/` owns the provider-agnostic investigation context that OpenSRE passes
 between alert intake, evidence gathering, diagnosis, and reporting stages.
 
 Use this package for typed investigation state, evidence records, incident

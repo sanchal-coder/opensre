@@ -1,10 +1,10 @@
 from __future__ import annotations
 
-import context
+import core.context as context
 
 
 def test_context_package_has_no_shell_prompt_exports() -> None:
-    """Top-level context should not expose shell prompt/runtime request helpers."""
+    """Core context should not expose shell prompt/runtime request helpers."""
     forbidden_exports = {
         "AgentContext",
         "SYSTEM_PROMPT_BASE",
