@@ -18,7 +18,7 @@ Pytest discovers these tests through `pytest.ini`; scoped CI maps changes under
 - `turn_handler.py` — transport-agnostic turn callback:
   `build_gateway_turn_handler(console=...)` returns
   `(text, session, sink, logger) -> None` that drives
-  `Agent.dispatch_message_to_headless_agent(...)`.
+  `dispatch_message_to_headless_agent(...)`.
 - `telegram_gateway.py` — wires the handler into the Telegram polling worker.
 - `storage/session/resolver.py` — per-chat session binding; delegates
   create / resolve / rotate to `SessionManager`.

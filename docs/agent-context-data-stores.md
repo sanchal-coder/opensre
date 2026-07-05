@@ -124,7 +124,7 @@ sequenceDiagram
 ```
 
 All surfaces call the same `run_turn` engine. Gateway uses
-`Agent.dispatch_message_to_headless_agent` with `DefaultToolProvider(session, …)`
+`dispatch_message_to_headless_agent` with `DefaultToolProvider(session, …)`
 so action tools resolve from the **live** session integrations each turn (same as
 shell).
 

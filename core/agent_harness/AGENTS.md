@@ -223,7 +223,7 @@ think → call-tools → observe algorithm.
   hook exception is logged and swallowed; it never breaks the loop.
 - `core/agent/loop_host.py` — `LoopHost`, the `Protocol` `run_react_loop` calls
   back into. `Agent` implements it via the mixins plus its own
-  `_transform_context` / `_convert_to_llm` / `_before_request` /
+  `_transform_messages` / `_convert_to_llm` / `_before_request` /
   `_after_response` forwarders. The concrete `ProviderHookDelegate` type is an
   `Agent` implementation detail, not part of the host contract, so any host can
   wire those four provider hooks however it likes.
